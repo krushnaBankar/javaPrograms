@@ -32,7 +32,7 @@ public class ValidateKiteUsereIdUsinPropretyFile extends BaseNew {
 
   }
   @BeforeMethod
-  public void logineKiteApp() throws IOException {
+  public void logineKiteApp() throws IOException, InterruptedException {
 	  login.sendUserId(UtilityNew.readDataFromPropretyFile("UN"));
 	  login.sendPassword(UtilityNew.readDataFromPropretyFile("PWD"));
 	  pin.pinpageInfo(UtilityNew.readDataFromPropretyFile("PIN"));

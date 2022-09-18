@@ -13,7 +13,8 @@ public class KiteToPinPage {
     	PageFactory.initElements(driver, this);
     	
     }
-    public void pinpageInfo(String PIN) {
+    public void pinpageInfo(String PIN) throws InterruptedException {
+    	Thread.sleep(100);
     	Pin.sendKeys(PIN);
     	continueB.click();
     	
